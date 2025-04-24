@@ -1,3 +1,7 @@
+// Property of the author, sapbci.org, and contributors
+// Released under the MIT License
+// See LICENSE file for more information
+
 (function (root, factory) {
   if (typeof define === "function" && define.amd) {
     define([], factory);
