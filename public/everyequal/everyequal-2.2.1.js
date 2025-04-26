@@ -44,7 +44,7 @@
     if ("object" !== typeof target && "object" !== typeof source && coerced) {
       const coercedTarget = coerced(target);
       if (coercedTarget === "string") {
-        return target === source;
+        return String(target) === String(source);
       } else if (coercedTarget === "number") {
         return Number(target) === Number(source);
       } else if (coercedTarget === "boolean") {
