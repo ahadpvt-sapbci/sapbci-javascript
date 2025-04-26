@@ -229,8 +229,8 @@
     seen = new WeakMap(),
     depthIndex = 0
   ) {
-    const targetStr = Object.values(target).join("");
-    const sourceStr = Object.values(source).join("");
+    const targetStr = target.flat().join("");
+    const sourceStr = source.flat().join("");
     const quickCheckPassed = targetStr === sourceStr;
     if (target.length !== source.length) {
       return false;
